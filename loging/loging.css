@@ -1,0 +1,137 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background-color: #2c3e50;
+	font-family: monospace;
+}
+.input-container{
+	width: 280px;
+	position: relative;
+}
+.label{
+	position: absolute;
+	left: 10px;
+	top: 14px;
+	transition: all 0.2s;
+	padding: 0 2px;
+	z-index: 1;
+	color: #b3b3b3;
+	pointer-events: none;
+}
+.text-input{
+	padding: 0.8rem;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #382f26;
+	background: #272530;
+	border-radius: 10px;
+	font-size: 18px;
+	outline: none;
+	transition: all .3s;
+	color: #fff;
+}
+.label::before {
+	content: "";
+	height: 5px;
+	background-color: #272530;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 100%;
+	z-index: -1;
+}
+.text-input:focus {
+	border: 2px solid white;
+}
+.text-input:focus+.label,
+.filled{
+	top: -10px;
+	color: white;
+	font-size: 14px;
+}
+.text-input::placeholder {
+	font-size: 16px;
+	opacity: 0;
+	transition: all .3s;
+}
+.text-input:focus::placeholder {
+	opacity: 1;
+	animation-delay: 0.2s;
+}
+.body{
+	background-color: lightcoral;
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.field{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+	transition: 1s;
+	border: 5px solid black;
+}
+.field:hover{
+	background-color: gray;
+	transform: scale(1.1);	
+}
+.header{
+	color: black;
+}
+.l-r-btn{
+	padding: 9px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-top: 10px;
+	border-radius: 19px;
+	transition: 0.5s;
+	font-size: 18px;
+	background-color: black;
+	color: white;
+}
+.l-r-btn:hover{
+	transform: scale(1.1);
+	background-color: white;
+	color: black;
+}
+.cncl{
+	padding: 9px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-top: 10px;
+	border-radius: 19px;
+	transition: 0.5s;
+	font-size: 18px;
+}
+.cncl:hover{
+	transform: scale(1.1);
+	background-color: black;
+	color: white;
+}
+.srch{
+	padding: 9px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-top: 10px;
+	border-radius: 19px;
+	transition: 0.5s;
+	font-size: 18px;
+	background-color: teal;
+	color: white;
+	margin-bottom: 20px;
+}		 
+.srch:hover{
+	transform: scale(1.1);
+}
+.a-href{
+	color: blue;
+	text-decoration: none;
+}
+.a-href:hover{
+	color: white;
+	text-decoration: underline;
+}

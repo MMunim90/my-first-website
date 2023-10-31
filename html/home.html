@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWM- Home</title>
+    <link rel="icon" href="../image/twm.jpg">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: darkslategray;
+            font-family: monospace;
+        }
+        .cncl{
+            padding: 9px;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-top: 10px;
+            border-radius: 19px;
+            transition: 0.5s;
+            font-size: 18px;
+        }
+        .cncl:hover{
+            transform: scale(1.1);
+            background-color: black;
+            color: white;
+        }
+        .frv{
+            text-align: center;
+        }
+        .about {
+            border: 5px solid black;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .main{
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <img src="../gif/DeadlyBaggyLaughingthrush-max-1mb.gif" height="600px" width="1065px">
+    <section class="about">
+        <div class="main">
+                <video controls height="600px" width="1065px" autoplay muted>
+                    <source src="../video/home.mp4" type="video/mp4">
+                </video>
+        </div>
+    </section>
+    <a href="../index.html" class="frv"><input type="submit" value="Back" class="cncl"></a>
+</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 5px 10px;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+    font-family: monospace;
+}
+/*.wrapper{
+    display: inline-flex;
+}
+.wrapper .dynamic-text{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 80px;
+
+}
+.dynamic-text p{
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+.dynamic-text p span{
+    position: relative;
+}
+.dynamic-text p span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: darkslategray;
+    border-left: 2px solid white;
+    animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}*/
+.cncl{
+    padding: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 10px;
+    border-radius: 19px;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.cncl:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+.frv{
+    text-align: center;
+}
+.pic{
+    margin: 0 auto;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
+.dropdown-content {
+  display: none;
+  background-color: darkslategray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
