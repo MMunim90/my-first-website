@@ -67,6 +67,12 @@ span:nth-child(5){
 span:nth-child(6){
 	animation-delay: .5s;
 }
+span:nth-child(7){
+	animation-delay: .6s;
+}
+span:nth-child(8){
+	animation-delay: .7s;
+}
 .cncl{
     padding: 9px;
     padding-left: 16px;
