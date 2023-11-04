@@ -83,11 +83,6 @@ h4{
 	max-width: 100%;
 	position: relative;
 }
-.news{
-	width: 380px;
-	max-width: 100%;
-	position: relative;
-}
 .news input:first-child{
 	display: inline-block;
 	width: 100%;
