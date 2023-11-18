@@ -98,7 +98,6 @@
 		<textarea id="textBox" placeholder="Add caption:"></textarea>
 		<input type="file" accept="image/*" name="image" id="file" style="display: none;" onchange="loadFile(event)">
 		<label for="file"><img src="image/1.png" class="upload-icon"></label>
-		<button type="button">submit</button>
 	</div>
 	<script>
 		var textBox = document.getElementById("textBox");
@@ -111,6 +110,11 @@
 			imgBox.style.backgroundImage = "url(" +URL.createObjectURL(event.target.files[0])+ ")";
 		}
 	</script>
+
+	<div style="text-align: center;">
+		<button class="butn" style="margin: 20px"><b>submit</b></button>
+	</div>
+
 <!-----service section start----->
 	<div class="Service">
 		<div class="title">
@@ -170,8 +174,8 @@
 			<a href="https://www.youtube.com/@mmunim349"><i class="fa-brands fa-youtube"></i></a>
 		</div>
 		<p class="end">&#169; CopyRight By MMunim</p>
-		<a href="#" class="btn btn-info btn-lg">
-			<span class="glyphicon glyphicon-refresh"></span> Page-up
+		<a href="#" class="btn btn-info btn-lg" style="padding: 8px 50px;">
+			<span class="glyphicon glyphicon-refresh">&#8613;</span>
 		  </a>
 	</footer>
 </body>
