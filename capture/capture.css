@@ -5,7 +5,9 @@
             display: grid;
             justify-content: center;
             align-items: center;
-            background-color: rgb(99, 129, 129);
+            background-image: url(pic/bg.jpg);
+            background-attachment: fixed;
+            background-size: cover;
             font-family: monospace;
         }
         .cncl{

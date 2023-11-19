@@ -21,7 +21,7 @@ body{
 }
 .container{
 	text-align: center;
-	background-color: orange;
+	background-color: aquamarine;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,8 +45,8 @@ span{
 		text-shadow: none;
 	}
 	100%{
-		color: orange;
-		text-shadow: 0 0 10px #d35400, 0px 0px 70px #d35400;
+		color: aquamarine;
+		text-shadow: 0 0 10px #0089d3, 0px 0px 70px #0089d3;
 	}
 }
 span:nth-child(1){
