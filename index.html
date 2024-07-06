@@ -12,63 +12,70 @@
 	<link href="https://fonts.googleeapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
 	<!----hero section start---->
-	<div class="hero">
-		<nav>
-			<h2 onclick="window.location.reload();" class="logo">Wander<span>lust</span></h2>
-			<ul>
-				<li><a href="html/home.html">Home</a></li>
-				<li><a href="about/about.html">About</a></li>
-				<li><a href="html/services.html">Upadate</a></li>
-				<li><a href="faq/faq.html">FAQ</a></li>
-				<li><a href="capture/capture.html">Capture</a></li>
-				<li><a href="html/feedback.html">Feedback</a></li>		
-			</ul>
-			<a href="loging/loging.html" class="btn">login</a>
-		</nav>
-		<div class="content">
-			<h4>Hello, My Name Is</h4>
-			<h1>Shahan Al <span>Munim</span></h1>
-			<h3>I'm <span>the Traveler</span></h3>
-			<div class="newslatter" style="margin-top: 5px;">
-				<form>
-					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
-					<input type="submit" name="submit" value="Done">
-				</form>
+		<div class="hero">
+			<nav>
+				<h2 onclick="window.location.reload();" class="logo">[WL]</h2>
+				<ul>
+					<li><a href="html/capture.html">Images</a></li>
+					<li><a href="html/services.html">News</a></li>
+					<li><a href="html/faq.html">FAQ</a></li>
+					<li><a href="html/feedback.html">Feedback</a></li>	
+				</ul>
+				<input type="text" name="search" id="search" placeholder="search"><br>
+			</nav>
+			<div class="content">
+			<h1>Hey! Traveler</h1>
+			<h3>Want to travel?</h3>
+				<div class="haga"><a href="loging/loging.html" class="btn">login</a></div>
 			</div>
 		</div>
-	</div>
 	<!----about section start---->
-	<section class="about">
+	<section class="about" style="background-image: url(gif/3.gif); background-size: cover;">
 		<div class="main">
 			<div id="div2">
-				<img src="image/munim.png.jpg" height="650px" width="500px">
+				<img src="image/m.png" height="650px" width="500px">
 			</div>
 			<div class="about-text">
-				<h2>About Me</h2>
-				<h5><span>Thirsty For </span>Travel</h5>
-				<p>Wanderlust.<br> Studying at World University Bangladesh (WUB).<br> Department of Compter Science & Engineering.<br>
-                I have already traveled to some districts including 5 divisions of Bangladesh. </p>
-                <a href="html/bio.html"><button type="button">More</button></a>
+				<h2 class="dudu">
+					<span>A</span>
+	                <span>b</span>
+	                <span>o</span>
+	                <span>u</span>
+	                <span>t</span>
+	                <span>M</span>
+                    <span>e</span>
+				</h2>
+				<h4>~ Studying at World University Bangladesh (WUB). Department of Computer Science & Engineering. Motivated and Enthusiastic Ethical Hacking, Electronics and Programming. Known for a analytical mindset, problem-solving skills, and the ability to quickly adapt to new technologies and methodologies.</h4>
 			</div>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" style="background-image: url(gif/1.gif); background-size: cover;">
 		<div class="main">
-				<img src="gif/Rotating_earth_(large).gif" height="650px" width="550px">
+				<img src="image/cover.jpg" height="650px" width="550px">
 				<div class="about-text">
-					<h2>Earth</h2>
-					<h5 style="color: white;">The only living space<br>70% of the earth is water and 30% is land.<br>But in this 30% of the land, we have many things to observe.</h5>
+					<input id="ch" type="checkbox">
+					<h2>Purport</h2>
+					
+						  <p>“Traveling is an open invitation to the soul, a journey where every step is a dance between discovery and introspection. It's about the silent whispers of the wind as it carries stories of places far and near, tales of love, loss, and laughter that echo through time. Every sunrise becomes a promise of new beginnings, and every sunset, a gentle reminder of the beauty in endings.</p>
+			<div class="con">
+				<p>In each city street and quiet countryside, we find pieces of ourselves we didn't know were missing. We connect with strangers who feel like old friends and visit places that stir forgotten dreams and ignite new aspirations. The world unfolds before our eyes, revealing its intricate tapestry woven with threads of culture, history, and nature's wonders.<br><br><br>
+							
+					Travel is more than just a physical journey; it's a voyage of the heart. It challenges us, changes us, and makes us feel deeply alive. We leave behind parts of our old selves, only to return richer, more open-hearted, and filled with a profound sense of gratitude for the endless beauty that exists beyond the horizon.”</p>
+
+					<label for="ch">Show less</label>
+			</div>
+						<label for="ch">Read more</label>
+					
 				</div>
 		</div>
-	</section>
-	<section class="about">
+	<!--</section>-->
+	<!--<section class="about">-->
 		<div class="main">
 			<h1>Places where people like to travel more:</h1>
-			<div class="skill-container">
+			<div class="skill-container" style="background: none;">
 				<ul>
 					<li class="html">Chattogram</li>
 					<li class="css">Sylhet</li>
@@ -79,15 +86,15 @@
 				</ul>
 			</div>
 		</div>
-	</section>
-	<section class="about">
+	<!--</section>-->
+	<!--<section class="about">-->
 		<div class="main">
 				<video controls height="700px" width="500px" autoplay muted>
-					<source src="video/New video.mp4" type="video/mp4">
+					<source src="image/1.mp4" type="video/mp4">
 				</video>
 				<div class="about-text">
-					<h2>Shrimangal</h2>
-					<h5 style="color: white;">One of the most visited places in Bangladesh.</h5>
+					<h2>Traveling by bike</h2>
+					<h5 style="color: white;">"Traveling by bike riding offers a unique and enriching experience, combining the thrill of adventure with the beauty of nature. Despite the challenges, the rewards of bike travel are immense. The sense of experience and the connection with nature and people make it a memorable way to explore the world."</h5>
 				</div>
 		</div>
 	</section>
@@ -117,14 +124,14 @@
 	</div>
 
 <!-----service section start----->
-	<div class="Service">
+	<div class="Service" style="background-image: url(gif/2.gif); background-size: cover;">
 		<div class="title">
 			<h2>Popular YouTube Channels related to Traveling</h2>
 		</div>
 
 		<div class="box">
-		 <div class="card">
-		 <i class="fa-brands fa-youtube"></i>
+		 <div class="card" style="background-image: url(image/nadir.jpg); background-size: cover;">
+		 <i class="fa-brands fa-youtube" style="background: none; background-size: cover;"></i>
 		 	<h5>Tube</h5>
 		 	<div class="pra">
 		 	  <p>Nadir on the go-world's most beautiful place...</p>
@@ -135,8 +142,8 @@
 		 	</div>
 		 </div>
 
-		 	<div class="card">
-		 	<i class="fa-brands fa-youtube"></i>
+		 	<div class="card" style="background-image: url(image/labib.jpg); background-size: cover;">
+		 	<i class="fa-brands fa-youtube" style="background: none; background-size: cover;"></i>
 		 	<h5>Tube</h5>
 		 	<div class="pra">
 		 	  <p>Labib hossain joy-Sajek Valley Tour Plan...</p>
@@ -147,8 +154,8 @@
 		 	</div>
 		 </div>
 
-		 	<div class="card">
-		 	<i class="fa-brands fa-youtube"></i>
+		 	<div class="card" style="background-image: url(image/Ruhi\ Cenet.jpeg); background-size: cover;">
+		 	<i class="fa-brands fa-youtube" style="background: none; background-size: cover;"></i>
 		 	<h5>Tube</h5>
 		 	<div class="pra">
 		 	  <p>বিশ্বের শীতলতম শহরে ১ ঘন্টা হেঁটে চলা (-৭১°সে., ইয়াকুটস্ক)...</p>
@@ -160,8 +167,92 @@
 		 </div>
 		</div>
 	</div>
+	<!--Book now-->
+	<section id="explore-fiji" style="background-image: url(gif/hhh.gif); background-size: cover;">
+        <div class="conti">
+            <div class="explore-content-par">
+                <div class="explore-info">
+                    <h3>Book Now</h3>
+                    <div id="clockdiv">
+                        <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                        </div>
+                        <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                        </div>
+                        <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                        </div>
+                        <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="counter-form">
+                    <form action="/action_page.php">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+       function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+    </script>
 	<!----Contact Me---->
-	<div class="contact-me">
+	<div class="contact-me" style="background-image: url(image/cover.jpg); background-size: cover;">
 		<p>Let's go somewhere together</p>
 		<a class="button-two" href="contact/contact.html" style="margin-top: 15px;">contact me</a>
 	</div>
@@ -176,7 +267,7 @@
 		</div>
 		<p class="end">&#169; CopyRight By MMunim</p>
 		<a href="#" class="btn btn-info btn-lg" style="padding: 8px 50px;">
-			<span class="glyphicon glyphicon-refresh">&#8613;</span>
+			<div class="glyphicon glyphicon-refresh">Page Up</div>
 		  </a>
 	</footer>
 </body>

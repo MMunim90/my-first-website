@@ -1,33 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="../image/twm.jpg">
-	<link rel="stylesheet" href="../loging.css">
-	<title>Forgotten Password?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../../gif/sky.gif);
+	background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+	border: 5px solid black;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    width: 30%;
+    padding: 10px;
+    margin-right: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button#resetButton {
+    background-color: #8d6d0d;
+}
+
+button#cancelButton {
+    background-color: #fa011a;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#message {
+    margin-top: 10px;
+    color: red;
+}
+
+    </style>
 </head>
 <body>
-	<div class="body" style=" margin-top: 50px;">
-	<fieldset class="field" style=" margin-top: 0px;">
-	<div align="center">
-		<h1 class="header">Reset page</h1>
-		<img src="../image/reset.png" height="200px" width="200px"><br>
-	</div>
-	<!-- reset from -->
-	<div align="center">
-		<h1 style="color: black;">Find Your Account</h1><hr>
-		<p><b>Please enter your email address or mobile number to<br> search
-		for your account</b></p>
-	<div class="input-container">
-		<input type="email" name="mail" id="email" autocomplete="off" required placeholder="Enter your email"
-		 class="text-input">
-		<label for="mail" class="label">Email</label>
-	</div><br><br>
-		<a href="../loging.html"><input type="submit" value="Cancel" class="cncl"></a>
-		<input type="submit" value="Search" class="srch">
-	</div>
-</fieldset>
-</div>
+    <div class="container">
+        <form id="resetPasswordForm">
+            <h2>Reset Password</h2>
+            <div class="form-group">
+                <label for="newPassword">New Password :</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password :</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+                <button type="button" id="resetButton">Reset</button>
+                <button type="button" id="cancelButton">Cancel</button>
+            </div>
+            <p id="message"></p>
+        </form>
+    </div>
+    <script>
+        document.getElementById('resetPasswordForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const newPassword = document.getElementById('newPassword').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    const message = document.getElementById('message');
+
+    if (newPassword === confirmPassword) {
+        message.style.color = 'green';
+        message.textContent = 'Password has been reset successfully.';
+        // Here you would typically send the new password to your server for processing
+    } else {
+        message.style.color = 'red';
+        message.textContent = 'Passwords do not match. Please try again.';
+    }
+});
+
+document.getElementById('resetButton').addEventListener('click', function() {
+    document.getElementById('resetPasswordForm').reset();
+    document.getElementById('message').textContent = '';
+});
+
+document.getElementById('cancelButton').addEventListener('click', function() {
+    window.location.href = '../loging.html'; // Change 'index.html' to the desired URL
+});
+
+    </script>
 </body>
 </html>

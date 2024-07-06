@@ -21,7 +21,7 @@ body{
 }
 .container{
 	text-align: center;
-	background-color: aquamarine;
+	background-color: #52bca6;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,7 +45,7 @@ span{
 		text-shadow: none;
 	}
 	100%{
-		color: aquamarine;
+		color: #52bca6;
 		text-shadow: 0 0 10px #0089d3, 0px 0px 70px #0089d3;
 	}
 }
@@ -70,10 +70,9 @@ span:nth-child(6){
 span:nth-child(7){
 	animation-delay: .6s;
 }
-span:nth-child(8){
-	animation-delay: .7s;
-}
+
 .cncl{
+	color: #52bca6;
     padding: 9px;
     padding-left: 16px;
     padding-right: 16px;
@@ -84,7 +83,7 @@ span:nth-child(8){
 }
 .cncl:hover{
     transform: scale(1.1);
-    background-color: black;
+    background-color: #52bca6;
     color: white;
 }
 .frv{

@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="image/twm.jpg">
-	<link rel="stylesheet" href="loging.css">
-	<title>TWM- log in or sign up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="loging.css">
+    <title>TWM- Login</title>
+	<link rel="icon" href="../image/twm.jpg">
 </head>
+
 <body>
-	<div class="body" style=" margin-top: 35px;">
-	<fieldset class="field" style=" margin-top: 0px;">
-	<div align="center">
-		<h1 class="header">Login page</h1>
-		<img src="image/login.png" height="200px" width="200px">
-	</div><br>
-	<!-- login from -->
-	<div align="center">
-		<form>
-		<div class="input-container">
-			<input type="text" name="user" id="username" autocomplete="off" required placeholder="Enter your username" class="text-input">
-			<label for="user" class="label">Username</label>
-			</div><br>
-		<div class="input-container">
-			<input name="pass" id="password" autocomplete="off" required 
-			placeholder="Enter your password" class="text-input">
-			<label for="pass" class="label">Password</label>
-		</div><br>
-		<input type="submit" value="log-in" class="l-r-btn">
-		</form>
-	</div>
-	<div align="center">
-		<p><b>Can't remember your passward? please</b>
-			<a href="other/reset.html" class="a-href">Reset here</a></p>
-		<p><b>Don't have any accout? please</b>
-		    <a href="other/register.html" class="a-href">Register here</a></p>
-	    <p><b>Want to return to the main page? Please</b>
-			<a href="../index.html" class="a-href">Click here</a></p>	
-	</div>
-</fieldset>
-</div>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://x.com/__munim__" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://github.com/MMunim90" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/m-munim-436456279/" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://x.com/__munim__" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://github.com/MMunim90" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/m-munim-436456279/" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="other/reset.html">Forget Your Password?</a>
+                <button>Sign In</button>
+				<a href="../index.html">Return main page</a>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+		const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+	</script>
 </body>
+
 </html>

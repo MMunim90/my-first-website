@@ -6,54 +6,143 @@
     <title>TWM- Feedback</title>
     <link rel="icon" href="../image/twm.jpg">
     <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            display: grid;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(57, 59, 53);
+            background-image: url(../gif/5.gif); 
+			background-size: cover;
+            display: flex;
             justify-content: center;
             align-items: center;
-            background-color: darkslategray;
-            font-family: monospace;
+            height: 100vh;
+            margin: 0;
         }
-        .cncl{
-            padding: 9px;
-            padding-left: 16px;
-            padding-right: 16px;
-            margin-top: 10px;
-            border-radius: 19px;
-            transition: 0.5s;
-            font-size: 18px;
-        }
-        .cncl:hover{
-            transform: scale(1.1);
-            background-color: black;
+        
+        .container {
+            background-color: #333;
             color: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
         }
-        .frv{
-            text-align: center;
+        
+        h1 {
+            margin-top: 0;
         }
-        .about {
-            border: 5px solid black;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-        .main{
-            margin: 0 auto;
+        
+        form {
             display: flex;
-            align-items: center;
-            justify-content: space-around;
-            color: white;
-            padding: 7px;
+            flex-direction: column;
         }
+        
+        label {
+            margin: 10px 0 5px;
+        }
+        
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
     </style>
 </head>
 <body>
-    <section class="about">
-        <div class="main">
-                <h1>Any feedback hasn't been added yet...</h1>
-        </div>
-    </section>
-    <a href="../index.html" class="frv"><input type="submit" value="Back" class="cncl"></a>
+    <div class="container">
+        <h1>Send your Feedback!</h1>
+        <form id="feedbackForm">
+            <label for="goal">Did you achieve your goal?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="goal" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="partly" name="goal" value="Partly">
+                <label for="partly">Partly</label>
+                <input type="radio" id="no" name="goal" value="No">
+                <label for="no">No</label>
+            </div>
+            
+            <label for="visitReason">What was the reason for your visit?</label>
+            <select id="visitReason" name="visitReason">
+                <option value="">Select</option>
+                <option value="Information">Information</option>
+                <option value="Support">Support</option>
+                <option value="Purchase">Purchase</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="notAchieveReason">What was the reason you could not achieve your goal?</label>
+            <select id="notAchieveReason" name="notAchieveReason">
+                <option value="">Select</option>
+                <option value="Navigation">Navigation</option>
+                <option value="Content">Content</option>
+                <option value="Technical Issues">Technical Issues</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="suggestions">Do you have any suggestions to make our website better?</label>
+            <textarea id="suggestions" name="suggestions"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            const goal = document.querySelector('input[name="goal"]:checked')?.value;
+            const visitReason = document.getElementById('visitReason').value;
+            const notAchieveReason = document.getElementById('notAchieveReason').value;
+            const suggestions = document.getElementById('suggestions').value;
+        
+            if (!goal || !visitReason) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+        
+            console.log({
+                goal,
+                visitReason,
+                notAchieveReason,
+                suggestions
+            });
+        
+            alert('Feedback submitted successfully!');
+            document.getElementById('feedbackForm').reset();
+        });
+        
+    </script>
 </body>
 </html>
