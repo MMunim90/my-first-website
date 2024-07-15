@@ -99,12 +99,14 @@ input:focus{
 	background-size: 25px;
 	font-size: 1 rem;
 	padding: 10px 50px;
-	background-color: black;
+	background-color: white;	
 	width: 150px;
 	transition: width 0.3s ease-in-out;
+	box-shadow: 0 5px 8px 3px black;
 }
 #search:focus{
 	width: 30%;
+	color: black;
 }
 input::placeholder {
 	opacity: 0;
@@ -258,6 +260,24 @@ h1{
 	animation-iteration-count: infinite;
 /*    animation-direction: forward;*/
 	animation-fill-mode: forwards;
+}
+.html{
+	color: white;
+}
+.css{
+	color: white;
+}
+.js{
+	color: white;
+}
+.bs{
+	color: white;
+}
+.java{
+	color: white;
+}
+.cplus{
+	color: white;
 }
 .skill-container li.html::after{
 	animation-name: html;
@@ -761,8 +781,8 @@ span:nth-child(5){
 }
 
 .messi{
-	background-image: url(image/sdfsd.png);
-	background-size: contain;
+	background-image: url(image/sdfsd2.png);
+	background-size: cover;
 	background-repeat: no-repeat;
 	mask-image: linear-gradient(white,transparent);
 	-webkit-mask-image: linear-gradient(-270deg,white,70%,transparent 100%);
