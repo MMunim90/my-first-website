@@ -7,23 +7,7 @@
 html{
 	scroll-behavior: smooth;
 }
-#arrow i {
-    position: fixed;
-    bottom: 70px;
-    right: 60px;
-    cursor: pointer;
-    background-color: gray;
-    color: #fff;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 30px;
-}
-#arrow i:hover {
-	color: #0099FF;
-}
+
 .hero{
 	height: 100vh;
 	width: 100%;
@@ -798,7 +782,7 @@ span:nth-child(5){
 
 .pukku li{
 	display: inline-block;
-	padding: 10px 280px;
+	padding: 10px 280px 50px;
 }
 
 /*image*/
