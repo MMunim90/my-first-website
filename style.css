@@ -42,7 +42,7 @@ nav{
 	justify-content: space-between;
 }
 .logo{
-	color: black;
+	color: white;
 	font-size: 35px;
 	letter-spacing: 3px;
 	cursor: pointer;
@@ -96,7 +96,7 @@ input:focus{
 	background-size: 25px;
 	font-size: 1 rem;
 	padding: 10px 50px;
-	background-color: white;
+	background-color: black;
 	width: 150px;
 	transition: width 0.3s ease-in-out;
 }
@@ -133,6 +133,11 @@ h3{
 	color: white;
 	font-size: 35px;
 	margin-bottom: 50px;
+}
+.ronaldo{
+	text-align: center;
+	margin-top: 35px;
+	font-size: 45px;
 }
 h4{
 	color: white;
