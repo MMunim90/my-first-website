@@ -23,10 +23,10 @@
 			<nav>
 				<h2 onclick="window.location.reload();" class="logo">[TWM]</h2>
 				<ul>
-					<li><a href="html/capture.html">Images</a></li>
-					<li><a href="html/services.html">News</a></li>
-					<li><a href="html/faq.html">FAQ</a></li>
-					<li><a href="html/feedback.html">Feedback</a></li>	
+					<li><a href="#about">About</a></li>
+					<li><a href="#images">Images</a></li>
+					<li><a href="#boknow">Book Now</a></li>
+					<li><a href="#contact">Contact</a></li>	
 				</ul>
 				<input type="text" name="search" id="search" placeholder="search"><br>
 			</nav>
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 	<!----about section start---->
-	<section class="about" style="background-image: url(gif/3.gif); background-size: cover;">
+	<section id="about" class="about" style="background-image: url(gif/3.gif); background-size: cover;">
 		<div class="main">
 			<div id="div2">
 				<img src="image/m.png" height="650px" width="500px">
@@ -49,8 +49,6 @@
 	                <span>o</span>
 	                <span>u</span>
 	                <span>t</span>
-	                <span>M</span>
-                    <span>e</span>
 				</h2>
 				<h4>~ Studying at World University Bangladesh (WUB). Department of Computer Science & Engineering. Motivated and Enthusiastic Ethical Hacking, Electronics and Programming. Known for a analytical mindset, problem-solving skills, and the ability to quickly adapt to new technologies and methodologies.</h4>
 			</div>
@@ -102,6 +100,45 @@
 				</div>
 		</div>
 	</section>
+
+	<!--image section-->
+	<section>
+		<div class="hrp" id="images">
+            <h1 class="cen"><u>Image Gallery</u></h1><br><br>
+
+
+<div class="full-img" id="fullImgBox">
+    <img src="../image/1.jpg" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+</div>
+
+<div class="img-gallery">
+    <img src="image/1.jpg" onclick="openFullImg(this.src)">
+    <img src="image/2.jpg" onclick="openFullImg(this.src)">
+    <img src="image/3.jpg" onclick="openFullImg(this.src)">
+    <img src="image/4.jpg" onclick="openFullImg(this.src)">        
+    <img src="image/6.jpg" onclick="openFullImg(this.src)">
+    <img src="image/8.jpg" onclick="openFullImg(this.src)">
+    <img src="image/10.jpg" onclick="openFullImg(this.src)">
+    <img src="image/11.jpg" onclick="openFullImg(this.src)">
+    <img src="image/9.jpg" onclick="openFullImg(this.src)">    
+</div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+</div>
+	</section>
+
 	<div>
 		   <h3 class="ronaldo">Add the most beautiful photo you have taken...</h3>
 		</div>
@@ -173,7 +210,7 @@
 	</div>
 	<!--Book now-->
 	<section id="explore-fiji" style="background-image: url(gif/hhh.gif); background-size: cover;">
-        <div class="conti">
+        <div class="conti" id="boknow">
             <div class="explore-content-par">
                 <div class="explore-info">
                     <h3>Book Now</h3>
@@ -262,12 +299,12 @@ var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
     </script>
 	<!----Contact Me---->
-	<div class="contact-me" style="background-image: url(image/cover.jpg); background-size: cover;">
+	<div class="contact-me" id="contact" style="background-image: url(image/cover.jpg); background-size: cover;">
 		<p>Or, You can</p>
 		<a class="button-two" href="contact/contact.html" style="margin-top: 15px;">contact me</a>
 	</div>
 	<!-----footer start----->
-	<footer>
+			<footer class="messi">
 		<p>Shahan Al Munim</p>
 		<p>For more update about traveling- please click on the link below to follow to my channel:</p>
 		<div class="social">
@@ -275,10 +312,17 @@ initializeClock('clockdiv', deadline);
 			<a href="https://www.instagram.com/_mmunim_/"><i class="fa-brands fa-instagram"></i></a>
 			<a href="https://www.youtube.com/@mmunim349"><i class="fa-brands fa-youtube"></i></a>
 		</div>
-		<p class="end">&#169; CopyRight By MMunim</p>
+				<p class="end">&#169; CopyRight By MMunim</p>
 		<a href="#" class="btn btn-info btn-lg" style="padding: 8px 50px;">
-			<div class="glyphicon glyphicon-refresh">Page Up</div>
+			<div class="glyphicon glyphicon-refresh fade-in-fade-out">Page Up</div>
 		  </a>
-	</footer>
+	</footer><br><br>
+<div>
+	<ul class="pukku">
+		<li><a href="html/services.html">News</a></li>
+		<li><a href="html/faq.html">FAQ</a></li>
+		<li><a href="html/feedback.html">Feedback</a></li>	
+	</ul><br><br>
+</div>
 </body>
 </html>

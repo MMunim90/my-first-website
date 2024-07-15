@@ -4,18 +4,22 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 }
+html{
+	scroll-behavior: smooth;
+}
 #arrow i {
     position: fixed;
-    bottom: 50px;
-    right: 45px;
+    bottom: 70px;
+    right: 60px;
     cursor: pointer;
     background-color: gray;
     color: #fff;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
     border-radius: 50px;
+    font-size: 30px;
 }
 #arrow i:hover {
 	color: #0099FF;
@@ -27,7 +31,6 @@
 	background-position: center;
 	background-size: cover;
 }
-
 nav{
 	display: flex;
 	align-items: center;
@@ -756,9 +759,73 @@ span:nth-child(4){
 span:nth-child(5){
 	animation-delay: .4s;
 }
-span:nth-child(6){
-	animation-delay: .5s;
+
+.messi{
+	background-image: url(image/sdfsd.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	mask-image: linear-gradient(white,transparent);
+	-webkit-mask-image: linear-gradient(-270deg,white,70%,transparent 100%);
 }
-span:nth-child(7){
-	animation-delay: .6s;
+
+@keyframes fade-inout{
+	0%{ opacity:1;}
+	100%{ opacity:0;}
 }
+.fade-in-fade-out{
+	animation: fade-inout 1s infinite alternate;
+}
+
+.pukku li{
+	display: inline-block;
+	padding: 10px 280px;
+}
+
+/*image*/
+.hrp{
+            text-align: center;
+            background-image: url(image/bg.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .img-gallery{
+            width: 80%;
+            margin: 10px auto 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 35px;
+        }
+        .img-gallery img{
+            width: 100%;
+            cursor: pointer;
+        }
+        .img-gallery img:hover{
+            transform: scale(0.7) rotate(-15deg);
+            transition: 0.5s;
+            border-radius: 30px;
+            box-shadow: 0 32px 75px rgba(68,77,136, 0.2);
+        }
+        .full-img{
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+        .full-img img{
+            width: 90%;
+            max-width: 500px;
+        }
+        .full-img span{
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
