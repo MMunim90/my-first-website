@@ -285,9 +285,13 @@
                 </div>
                 <div class="counter-form">
                     <form action="/action_page.php">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        <input type="text" placeholder="Your Phone number">
-						<input type="text" placeholder="Your national identity card number">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                        <div class="counter-from">
+							<input type="number" id="quantity" name="quantity" min="01111111111" max="01999999999" style="width: 49.6%; opacity: 0.6;
+							background-color: black;" placeholder="Your Phone number">
+							<input type="number" id="quantity" name="quantity" min="0000000000" max="9999999999999" style="width: 49.6%; opacity: 0.6;
+							background-color: black;" placeholder="Your NID Number">
+						</div>
                         <select id="country" name="country">
 							<option value="usa">Select</option>
                             <option value="australia">Sylhet</option>
@@ -297,6 +301,9 @@
 							</option>
 							<option value="usa">Rangamati</option>
 							<option value="usa">Bhola</option>
+							<option value="usa">Khulna</option>
+							<option value="usa">Rajshahi</option>
+							<option value="usa">Kolkata</option>
                         </select>
                         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                         <input type="submit" value="Submit">
